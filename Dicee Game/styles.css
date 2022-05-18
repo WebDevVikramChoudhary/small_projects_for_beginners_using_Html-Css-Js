@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+body {
+  background-color: #99154e;
+  font-family: "Viaoda Libre", cursive;
+  overflow: hidden;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  margin: 30px;
+  text-shadow: 5px 0 #191c20;
+  font-size: 8rem;
+  color: #ebde29;
+}
+
+p {
+  font-size: 2rem;
+  color: #ebde29;
+}
+
+img {
+  width: 80%;
+}
+
+button {
+  width: 10%;
+  height: 3rem;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 20rem;
+  background-color: #ebde29;
+  text-transform: uppercase;
+}
+footer {
+  color: #eeeeee;
+  text-align: center;
+}
+
+.image360 {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: spin;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+
+  -ms-animation-name: spin;
+  -ms-animation-duration: 0.6s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
