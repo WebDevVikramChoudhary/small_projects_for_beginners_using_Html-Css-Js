@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c7ac98;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+figure img{
+    width: 60vw;
+    height: 60vh;
+}
+.main-time {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.main-time h3 {
+    color: #181c22;
+    font-size: 2rem;
+    margin:0 2rem 0 2rem ;
+}
