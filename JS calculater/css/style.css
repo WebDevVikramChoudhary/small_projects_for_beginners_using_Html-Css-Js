@@ -1,0 +1,63 @@
+body {
+  background-image: url("/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: pink;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section input {
+  font-size: 2rem;
+  height: 50px;
+  width: 200px;
+  color: #152d35;
+}
+
+section table tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section table tr td {
+  height: 50px;
+  width: 50px;
+}
+
+section table tr td button {
+  font-size: 1.5rem;
+  color: #d4ecdd;
+  background-color: #345b63;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section table tr td button:hover {
+  color: #345b63;
+  background-color: #d4ecdd;
+}
+/*# sourceMappingURL=style.css.map */

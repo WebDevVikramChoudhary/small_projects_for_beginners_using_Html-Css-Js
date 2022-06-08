@@ -1,0 +1,42 @@
+body {
+  background-image: url("/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: pink;
+}
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  input {
+    font-size: 2rem;
+    height: 50px;
+    width: 200px;
+    color: #152d35;
+  }
+  table {
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      td {
+        height: 50px;
+        width: 50px;
+        button {
+          font-size: 1.5rem;
+          color: #d4ecdd;
+          background-color: #345b63;
+          height: 100%;
+          width: 100%;
+          transition: 0.3s;
+          &:hover {
+            color: #345b63;
+            background-color: #d4ecdd;
+          }
+        }
+      }
+    }
+  }
+}
