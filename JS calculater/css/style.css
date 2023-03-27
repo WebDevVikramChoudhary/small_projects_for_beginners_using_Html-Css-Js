@@ -2,7 +2,7 @@ body {
   background-image: url("/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: pink;
+  background-color: rgb(194, 50, 74);
 }
 
 section {
