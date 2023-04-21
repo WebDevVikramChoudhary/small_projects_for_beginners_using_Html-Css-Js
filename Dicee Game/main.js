@@ -1,29 +1,27 @@
-var rendom1 = Math.floor(Math.random() * 6)+1;
-var rendom2 = Math.floor(Math.random() * 6)+1;
-var rendomImg1 = "images/dice"+rendom1+".png"
-var rendomImg2 = "images/dice"+rendom2+".png"
+// Declaring variables and creating random images
+const random1 = Math.floor(Math.random() * 6) + 1;
+const random2 = Math.floor(Math.random() * 6) + 1;
+const randomImg1 = `images/dice${random1}.png`;
+const randomImg2 = `images/dice${random2}.png`;
 
-function winer(){
-    image();
-if(rendom1 < rendom2){
-    document.querySelector("h1").innerHTML="Player 2 wins";
-    }else if(rendom1 === rendom2){
-    document.querySelector("h1").innerHTML="Drow"
-    }else {
-        document.querySelector("h1").innerHTML="Player 1 wins"
-    } 
+// Displaying images and identifying the winner
+function displayResult() {
+  document.querySelector(".img1").setAttribute("src", randomImg1);
+  document.querySelector(".img2").setAttribute("src", randomImg2);
+
+  if (random1 < random2) {
+    document.querySelector("h1").innerHTML = "Player 2 wins";
+  } else if (random1 === random2) {
+    document.querySelector("h1").innerHTML = "Draw";
+  } else {
+    document.querySelector("h1").innerHTML = "Player 1 wins";
+  }
 }
 
-function image(){
-    document.querySelector(".img1").setAttribute("src", rendomImg1);
-    document.querySelector(".img2").setAttribute("src", rendomImg2);
-}
- winer();
+// Calling the function to display the result and identify the winner
+displayResult();
 
- function refreshPage(){
-    window.location.reload();
-    
-} 
-
-
-
+// Page refresh on click of the refresh button
+document.querySelector("button").addEventListener("click", () => {
+  location.reload();
+});
